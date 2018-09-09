@@ -1,0 +1,38 @@
+<navbar></navbar>
+<div style="margin-top:20px;">
+  <table class=' formMiddle formMiddle314' style='' cellpadding='0' cellspacing='0'>
+    <tr>
+      <td class='formMiddleLeft formMiddleLeft314'></td>
+      <td class='formMiddleCenter formMiddleCenter314 ' valign='top'>
+        <div class='formMiddleContent formMiddleContent314 fk-formContentOtherPadding' tabStyle='0'>
+          <div>
+            <div class='newsList J_newsList  newsNewModuleStyle_two  ' id='newsList314' _showSetting=0 newsListType='4'
+                 scroll='0'>
+              <div ng-repeat="s in nessCore.list" topClassName='top1' topSwitch='on' newsId='10' newsName='{{s.title}}'
+                   class='J_newsListLine line g_item wWLine  fk-newsLineHeight  J_nHover '>
+                <div class='J_newsCalendar newsCalendar fk-newsCalendar-dym'>
+                  <div class='fk-newsListDate fk-newsListDate-part1' id='verticalStyleDay'>{{s.d}}</div>
+                  <div class='fk-newsListDate fk-newsListDate-part2' id='verticalStyleYearandMonth'>{{s.ym}}</div>
+                  <a class='fk-newsCalendar-link' hidefocus='true' ng-href="/detail/{{s._id}}" target=_blank></a>
+                </div>
+                <div id='lineBody10' class='J_lineBody lineBody'>
+                  <div class='J_newsTitle newsTitle newsListNewsTitle3'>
+                    <div class='J_newsListTopFlag '></div>
+                    <a class='fk-newsListTitle' hidefocus='true' ng-href="/detail/{{s._id}}" target=_blank title="">{{s.title}}</a>
+                  </div>
+                  <div><p class='pic-mixNewsStyleSummary fk-newsListSummary'>
+                    {{s.context}}</p>
+                  </div>
+                </div>
+                <div class='J_separatorLine separatorLine g_separator  newsListSeparatorLine '></div>
+              </div>
+              <div class='clearfloat'></div>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td class='formMiddleRight formMiddleRight314'></td>
+    </tr>
+  </table>
+</div>
+<footer></footer>

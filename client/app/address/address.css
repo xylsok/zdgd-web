@@ -1,0 +1,29 @@
+.address-title-box {
+	background: #2a2828;
+	color: #fef5dd;
+	font-weight: 300;
+}
+
+.address-title-box div{
+	color: #a3a09b;
+}
+.address-title-box li {
+	list-style: none;
+	font-size: 13px;
+	line-height: 28px;
+}
+
+.address-title-box ul {
+	padding-left: 0;
+	margin-bottom: 20px;
+}
+.address-map-box{
+	height: 585px;
+  width: 100%;
+}
+.address-map-box iframe{
+	display: block;
+	width: 100%;
+	height: 585px;
+	border: 1px solid #2a2828;
+}

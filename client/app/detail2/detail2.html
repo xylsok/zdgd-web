@@ -1,0 +1,20 @@
+<navbar></navbar>
+<div class="container">
+  <div class="bg-color padding-20">
+    <div>
+      <h3>{{tjCore.bean.title}}</h3>
+    </div>
+    <hr>
+    <div class="text-center">
+      <img class="max-512" ng-src="http://file.xylsok.com/{{tjCore.bean.path}}"/>
+    </div>
+    <div style="font-size: 14px;">
+      <p ng-bind-html="tjCore.bean.context|to_trusted"></p>
+    </div>
+  </div>
+  <div style="margin-top:40px;">
+    <a ui-sref="main" class="btn btn-metro btn-default">返回首页</a>
+  </div>
+
+</div>
+<footer></footer>

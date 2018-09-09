@@ -1,0 +1,68 @@
+
+/**
+ * Bootstrap Fonts
+ */
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot');
+  src: url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'),
+  url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+  url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+/**
+ *Font Awesome Fonts
+ */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../bower_components/font-awesome/fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('../bower_components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'),
+  url('../bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'),
+  url('../bower_components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'),
+  url('../bower_components/font-awesome/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**
+ * App-wide Styles
+ */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+.max-64 {
+  max-width: 64px;
+  max-height: 64px;
+}
+
+.max-128 {
+  max-width: 128px;
+  max-height: 128px;
+}
+
+.max-256 {
+  max-width: 256px;
+  max-height: 256px;
+}
+.max-512 {
+  max-width: 512px;
+  max-height: 512px;
+}
+
+.max-32 {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.max-18 {
+  max-width: 18px;
+  max-height: 18px;
+}
+

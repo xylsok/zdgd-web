@@ -1,0 +1,101 @@
+<div class="bg-color padding-20">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">公司简介</h3>
+    </div>
+    <div class="panel-body">
+  <textarea class="form-control" rows="8" ng-model="sysHomeCore.home.companyProfile">
+  </textarea>
+    </div>
+    <div class="panel-footer text-right">
+      <input type="button" class="btn btn-primary btn-metro" ng-click="sysHomeCore._save()" value="保存"/>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">推荐图片 <a ng-click="sysHomeCore._refresh()"><i class="fa fa-refresh" style="cursor: pointer"></i></a></h3>
+    </div>
+    <div class="panel-body">
+      <div ng-repeat="t in sysHomeCore.home.tuijian">
+        <div class="col-sm-2 text-center">
+          <div class="tuijian">
+            <img ng-src="http://file.xylsok.com/{{t.path}}" class="max-128" alt="{{t.title}}" title="{{t.title}}"/>
+
+          </div>
+          <div class="font-size-14">
+            {{t.title}}&nbsp;<span class="fa fa-trash-o " style="cursor: pointer;color:red" ng-click="sysHomeCore._remove(t._id)"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer text-right">
+      <form  role="form">
+        <div class="form-group">
+          <input type="text" class="form-control" id="name" ng-model="sysHomeCore.TJ.title" placeholder="标题"/>
+        </div>
+        <div class="form-group">
+          <textarea rows="10" placeholder="请输入内容。。。" class="form-control" ng-model="sysHomeCore.TJ.context"></textarea>
+        </div>
+      </form>
+      <div >
+        <uploader class="slim" path="0" callback="sysHomeCore._afterSaveFile0(o,fileName)"></uploader>
+        <input type="button" class="btn btn-primary btn-metro" ng-click="sysHomeCore._saveTJ()" value="图片已上传现在保存"/>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">热销图片 <a ng-click="sysHomeCore._refresh()"><i class="fa fa-refresh" style="cursor: pointer"></i></a></h3>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div ng-repeat="t in sysHomeCore.home.reXiao">
+          <div class="col-sm-2 text-center">
+            <div class="tuijian">
+              <img ng-src="http://file.xylsok.com/{{t.path}}" class="max-128" alt="{{t.title}}" title="{{t.title}}"/>
+            </div>
+            <div class="font-size-14">
+              {{t.title}}&nbsp;<span class="fa fa-trash-o " style="cursor: pointer;color:red" ng-click="sysHomeCore._remove(t._id)"></span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer text-right">
+      <form  role="form">
+        <div class="form-group">
+          <input type="text" class="form-control" ng-model="sysHomeCore.RX.title" placeholder="标题"/>
+        </div>
+        <div class="form-group">
+          <textarea rows="10" placeholder="请输入内容。。。" class="form-control" ng-model="sysHomeCore.RX.context"></textarea>
+        </div>
+      </form>
+      <uploader class="slim" path="1" callback="sysHomeCore._afterSaveFile(o,fileName)"></uploader>
+      <input type="button" class="btn btn-primary btn-metro" ng-click="sysHomeCore._saveRX()" value="图片已上传现在保存"/>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">轮播大图 <a ng-click="sysHomeCore._refresh()"><i class="fa fa-refresh" style="cursor: pointer"></i></a></h3>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div ng-repeat="t in sysHomeCore.home.getDatu">
+          <div class="col-sm-6 text-center">
+            <div class="tuijian">
+              <img ng-src="http://file.xylsok.com/{{t.path}}" class="max-256" alt="{{t.title}}" title="{{t.title}}"/>
+            </div>
+            <div class="font-size-14">
+              {{t.title}}&nbsp;<span class="fa fa-trash-o " style="cursor: pointer;color:red" ng-click="sysHomeCore._removeDatu(t._id)"></span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer text-right">
+      <uploader class="slim" path="/datu/home" callback="sysHomeCore._afterSaveFile2()"></uploader>
+    </div>
+  </div>
+</div>

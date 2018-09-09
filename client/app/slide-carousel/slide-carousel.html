@@ -1,0 +1,12 @@
+<div class="slider">
+	<div class="slide" ng-repeat="s in data" ng-class="{active:$index==index}">
+		<a href="{{s.link}}">
+			<img ng-src="http://file.xylsok.com/{{s.path}}"/>
+		</a>
+	</div>
+	<div class="slider-left" ng-click="set(index-1)"></div>
+	<div class="slider-right" ng-click="set(index+1)"></div>
+	<div class="slider-nav">
+		<a ng-repeat="s in data" ng-click="set($index)" ng-class="{active:$index==index}"></a>
+	</div>
+</div>

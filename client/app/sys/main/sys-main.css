@@ -1,0 +1,33 @@
+.system-child-header {
+	background-color: #fff;
+	font-size: 18px;
+	font-weight: 200;
+	border-bottom: solid 1px #ddd;
+	padding: 18px;
+}
+
+.system-child-header > i {
+	color: #999;
+}
+
+.system-child-content {
+	padding: 15px 20px;
+	background-color: #fff;
+	min-height: 400px;
+}
+
+.system-main-navbar {
+	text-align: center;
+}
+
+.system-main-navbar > a > span {
+	padding-right: 12px;
+}
+
+.system-main-navbar > a > i {
+	color: #777;
+}
+
+.system-main-navbar > a.active > i {
+	color: #fff;
+}
